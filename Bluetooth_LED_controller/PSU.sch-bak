@@ -1,0 +1,364 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Diode:US1A D?
+U 1 1 64888C07
+P 4950 1650
+F 0 "D?" V 4904 1730 50  0000 L CNN
+F 1 "US1A" V 4995 1730 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 4950 1475 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds16008.pdf" H 4950 1650 50  0001 C CNN
+	1    4950 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 6488B15C
+P 5400 1350
+F 0 "L?" V 5219 1350 50  0000 C CNN
+F 1 "33u" V 5310 1350 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns_SRR1210A" H 5400 1350 50  0001 C CNN
+F 3 "~" H 5400 1350 50  0001 C CNN
+	1    5400 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6488C1AC
+P 5750 1650
+F 0 "C?" H 5865 1696 50  0000 L CNN
+F 1 "220u" H 5865 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5788 1500 50  0001 C CNN
+F 3 "~" H 5750 1650 50  0001 C CNN
+	1    5750 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6488CFE5
+P 3450 1550
+F 0 "C?" H 3565 1596 50  0000 L CNN
+F 1 "100u" H 3565 1505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3488 1400 50  0001 C CNN
+F 3 "~" H 3450 1550 50  0001 C CNN
+	1    3450 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1350 4950 1350
+Wire Wire Line
+	4950 1350 4950 1500
+Wire Wire Line
+	4950 1350 5250 1350
+Connection ~ 4950 1350
+Wire Wire Line
+	5550 1350 5750 1350
+Wire Wire Line
+	5750 1350 5750 1500
+Wire Wire Line
+	5750 1350 5750 1150
+Connection ~ 5750 1350
+Wire Wire Line
+	3800 1150 3450 1150
+Wire Wire Line
+	3450 1150 3450 1400
+Wire Wire Line
+	3800 1350 3800 1900
+Wire Wire Line
+	4300 1550 4300 1900
+Wire Wire Line
+	4950 1800 4950 1900
+Wire Wire Line
+	5750 1800 5750 1900
+Wire Wire Line
+	5750 1900 4950 1900
+Wire Wire Line
+	4300 1900 4950 1900
+Connection ~ 4950 1900
+Wire Wire Line
+	4300 1900 3800 1900
+Connection ~ 4300 1900
+Wire Wire Line
+	3800 1900 3450 1900
+Wire Wire Line
+	3450 1900 3450 1700
+Connection ~ 3800 1900
+Wire Wire Line
+	4300 1900 4300 2100
+$Comp
+L power:GND #PWR?
+U 1 1 6489638B
+P 4300 2100
+F 0 "#PWR?" H 4300 1850 50  0001 C CNN
+F 1 "GND" H 4305 1927 50  0000 C CNN
+F 2 "" H 4300 2100 50  0001 C CNN
+F 3 "" H 4300 2100 50  0001 C CNN
+	1    4300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 6489D419
+P 3050 1150
+F 0 "L?" V 3240 1150 50  0000 C CNN
+F 1 "4.7u" V 3149 1150 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns_SRR1210A" H 3050 1150 50  0001 C CNN
+F 3 "~" H 3050 1150 50  0001 C CNN
+	1    3050 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 6489DC92
+P 2950 2550
+F 0 "L?" V 3140 2550 50  0000 C CNN
+F 1 "4.7u" V 3049 2550 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns_SRR1210A" H 2950 2550 50  0001 C CNN
+F 3 "~" H 2950 2550 50  0001 C CNN
+	1    2950 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6489E9AF
+P 2800 1600
+F 0 "C?" H 2915 1646 50  0000 L CNN
+F 1 "680u" H 2915 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2838 1450 50  0001 C CNN
+F 3 "~" H 2800 1600 50  0001 C CNN
+	1    2800 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1150 3200 1150
+Connection ~ 3450 1150
+Wire Wire Line
+	2800 1450 2800 1150
+Wire Wire Line
+	2800 1150 2900 1150
+Wire Wire Line
+	2800 1150 2350 1150
+Connection ~ 2800 1150
+Wire Wire Line
+	2000 2550 2000 1150
+Wire Wire Line
+	2000 2550 2800 2550
+Wire Wire Line
+	5750 1350 6700 1350
+$Comp
+L Regulator_Switching:LM2596S-5 U?
+U 1 1 648A3C94
+P 4300 1250
+F 0 "U?" H 4300 1617 50  0000 C CNN
+F 1 "LM2596S-5" H 4300 1526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 4350 1000 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 4300 1250 50  0001 C CNN
+	1    4300 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1150 5750 1150
+Wire Wire Line
+	2800 1750 2800 1950
+$Comp
+L power:GND #PWR?
+U 1 1 648A5794
+P 2800 1950
+F 0 "#PWR?" H 2800 1700 50  0001 C CNN
+F 1 "GND" H 2805 1777 50  0000 C CNN
+F 2 "" H 2800 1950 50  0001 C CNN
+F 3 "" H 2800 1950 50  0001 C CNN
+	1    2800 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 648A8944
+P 1000 1150
+F 0 "J?" H 1108 1331 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1108 1240 50  0000 C CNN
+F 2 "" H 1000 1150 50  0001 C CNN
+F 3 "~" H 1000 1150 50  0001 C CNN
+	1    1000 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 1150
+Wire Wire Line
+	1200 1150 1650 1150
+Wire Wire Line
+	1200 1250 1300 1250
+$Comp
+L power:GND #PWR?
+U 1 1 648AB2B6
+P 1300 1750
+F 0 "#PWR?" H 1300 1500 50  0001 C CNN
+F 1 "GND" H 1305 1577 50  0000 C CNN
+F 2 "" H 1300 1750 50  0001 C CNN
+F 3 "" H 1300 1750 50  0001 C CNN
+	1    1300 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1250 1300 1750
+$Comp
+L Device:C C?
+U 1 1 648ABE9E
+P 1650 1500
+F 0 "C?" H 1765 1546 50  0000 L CNN
+F 1 "100u" H 1765 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 1688 1350 50  0001 C CNN
+F 3 "~" H 1650 1500 50  0001 C CNN
+	1    1650 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1350 1650 1150
+Wire Wire Line
+	1650 1650 1650 1750
+$Comp
+L power:GND #PWR?
+U 1 1 648ABEA6
+P 1650 1750
+F 0 "#PWR?" H 1650 1500 50  0001 C CNN
+F 1 "GND" H 1655 1577 50  0000 C CNN
+F 2 "" H 1650 1750 50  0001 C CNN
+F 3 "" H 1650 1750 50  0001 C CNN
+	1    1650 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 1650 1150
+Wire Wire Line
+	1650 1150 2000 1150
+Wire Wire Line
+	3100 2550 3250 2550
+Text HLabel 3250 2550 2    50   Input ~ 0
+V12P0
+Text HLabel 6950 1350 2    50   Input ~ 0
+V5P0
+$Comp
+L Regulator_Linear:LM1084-3.3 U?
+U 1 1 648B2C61
+P 2100 3400
+F 0 "U?" H 2100 3642 50  0000 C CNN
+F 1 "LM1084-3.3" H 2100 3551 50  0000 C CNN
+F 2 "" H 2100 3650 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 2100 3400 50  0001 C CNN
+	1    2100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 648B9B13
+P 2350 1600
+F 0 "C?" H 2465 1646 50  0000 L CNN
+F 1 "330u" H 2465 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2388 1450 50  0001 C CNN
+F 3 "~" H 2350 1600 50  0001 C CNN
+	1    2350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1450 2350 1150
+Wire Wire Line
+	2350 1750 2350 1950
+$Comp
+L power:GND #PWR?
+U 1 1 648B9B1B
+P 2350 1950
+F 0 "#PWR?" H 2350 1700 50  0001 C CNN
+F 1 "GND" H 2355 1777 50  0000 C CNN
+F 2 "" H 2350 1950 50  0001 C CNN
+F 3 "" H 2350 1950 50  0001 C CNN
+	1    2350 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 1150
+Wire Wire Line
+	2350 1150 2000 1150
+Text GLabel 6950 1550 2    50   Input ~ 0
+V5P0
+Wire Wire Line
+	6950 1550 6700 1550
+Wire Wire Line
+	6700 1550 6700 1350
+Connection ~ 6700 1350
+Wire Wire Line
+	6700 1350 6950 1350
+$Comp
+L Device:C C?
+U 1 1 648C2D1A
+P 1550 3750
+F 0 "C?" H 1665 3796 50  0000 L CNN
+F 1 "100u" H 1665 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 1588 3600 50  0001 C CNN
+F 3 "~" H 1550 3750 50  0001 C CNN
+	1    1550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3600 1550 3400
+$Comp
+L Device:C C?
+U 1 1 648C40F8
+P 2650 3750
+F 0 "C?" H 2765 3796 50  0000 L CNN
+F 1 "100u" H 2765 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2688 3600 50  0001 C CNN
+F 3 "~" H 2650 3750 50  0001 C CNN
+	1    2650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3600 2650 3400
+Wire Wire Line
+	2100 3700 2100 4200
+Wire Wire Line
+	2100 4200 2650 4200
+Wire Wire Line
+	2650 4200 2650 3900
+Wire Wire Line
+	2100 4200 1550 4200
+Wire Wire Line
+	1550 4200 1550 3900
+Connection ~ 2100 4200
+$Comp
+L power:GND #PWR?
+U 1 1 648C92A4
+P 2100 4400
+F 0 "#PWR?" H 2100 4150 50  0001 C CNN
+F 1 "GND" H 2105 4227 50  0000 C CNN
+F 2 "" H 2100 4400 50  0001 C CNN
+F 3 "" H 2100 4400 50  0001 C CNN
+	1    2100 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4400 2100 4200
+Wire Wire Line
+	1800 3400 1550 3400
+Wire Wire Line
+	2400 3400 2650 3400
+Wire Wire Line
+	2650 3400 3050 3400
+Connection ~ 2650 3400
+Wire Wire Line
+	1550 3400 1400 3400
+Connection ~ 1550 3400
+Text GLabel 1400 3400 0    50   Input ~ 0
+V5P0
+Text HLabel 3050 3400 2    50   Input ~ 0
+V3P3_analog
+$EndSCHEMATC

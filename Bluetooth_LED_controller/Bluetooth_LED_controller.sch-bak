@@ -1,0 +1,165 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 647FB4FB
+P 1800 4350
+F 0 "J?" H 1907 5217 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1907 5126 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A_CircularHoles" H 1950 4350 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1950 4350 50  0001 C CNN
+	1    1800 4350
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 3550 4050 1250 1150
+U 648239E3
+F0 "Bluetooth_module" 50
+F1 "CC2451_Bluetooth.sch" 50
+F2 "DATA_LED" I R 4800 5050 50 
+F3 "D-" I L 3550 4300 50 
+F4 "D+" I L 3550 4450 50 
+F5 "3V3_IN" I R 4800 4200 50 
+$EndSheet
+$Sheet
+S 5950 4100 1250 1150
+U 6486084C
+F0 "LEDs" 50
+F1 "LEDs.sch" 50
+F2 "DATA_LED1" I L 5950 5050 50 
+F3 "V12P_LEDs" I L 5950 4200 50 
+$EndSheet
+$Sheet
+S 3550 2600 1150 1150
+U 64887EE4
+F0 "PSU" 50
+F1 "PSU.sch" 50
+F2 "V12P0" I R 4700 3150 50 
+F3 "V5P0" I R 4700 2750 50 
+F4 "V3P3_analog" I R 4700 3350 50 
+F5 "V3P3_digital" I R 4700 3500 50 
+$EndSheet
+Wire Wire Line
+	4700 3350 5100 3350
+Wire Wire Line
+	5100 3350 5100 4200
+Wire Wire Line
+	5100 4200 4800 4200
+Wire Wire Line
+	4700 3150 5700 3150
+Wire Wire Line
+	5700 3150 5700 4200
+Wire Wire Line
+	5700 4200 5950 4200
+Wire Wire Line
+	5950 5050 4800 5050
+$Comp
+L Device:R R?
+U 1 1 64B5BEBB
+P 2650 3950
+F 0 "R?" V 2550 4050 50  0000 C CNN
+F 1 "5.1K" V 2550 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2580 3950 50  0001 C CNN
+F 3 "~" H 2650 3950 50  0001 C CNN
+	1    2650 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 64B5C9FC
+P 2650 4050
+F 0 "R?" V 2750 4100 50  0000 C CNN
+F 1 "5.1K" V 2750 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2580 4050 50  0001 C CNN
+F 3 "~" H 2650 4050 50  0001 C CNN
+	1    2650 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 3950 2400 3950
+Wire Wire Line
+	2400 4050 2500 4050
+Wire Wire Line
+	2800 3950 2950 3950
+Wire Wire Line
+	2800 4050 2950 4050
+$Comp
+L power:GND #PWR?
+U 1 1 64B5E79C
+P 2950 3950
+F 0 "#PWR?" H 2950 3700 50  0001 C CNN
+F 1 "GND" V 2955 3822 50  0000 R CNN
+F 2 "" H 2950 3950 50  0001 C CNN
+F 3 "" H 2950 3950 50  0001 C CNN
+	1    2950 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64B5ED7A
+P 2950 4050
+F 0 "#PWR?" H 2950 3800 50  0001 C CNN
+F 1 "GND" V 2955 3922 50  0000 R CNN
+F 2 "" H 2950 4050 50  0001 C CNN
+F 3 "" H 2950 4050 50  0001 C CNN
+	1    2950 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64B5F470
+P 1800 5350
+F 0 "#PWR?" H 1800 5100 50  0001 C CNN
+F 1 "GND" H 1805 5177 50  0000 C CNN
+F 2 "" H 1800 5350 50  0001 C CNN
+F 3 "" H 1800 5350 50  0001 C CNN
+	1    1800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 5350 1800 5250
+$Comp
+L power:GND #PWR?
+U 1 1 64B6035A
+P 1500 5350
+F 0 "#PWR?" H 1500 5100 50  0001 C CNN
+F 1 "GND" H 1505 5177 50  0000 C CNN
+F 2 "" H 1500 5350 50  0001 C CNN
+F 3 "" H 1500 5350 50  0001 C CNN
+	1    1500 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5350 1500 5250
+Wire Wire Line
+	2500 4300 2500 4250
+Wire Wire Line
+	2500 4250 2400 4250
+Wire Wire Line
+	2500 4300 3550 4300
+Wire Wire Line
+	2400 4450 3550 4450
+Wire Wire Line
+	2400 3750 3200 3750
+Wire Wire Line
+	3200 3750 3200 2350
+Wire Wire Line
+	3200 2350 5150 2350
+Wire Wire Line
+	5150 2350 5150 2750
+Wire Wire Line
+	5150 2750 4700 2750
+$EndSCHEMATC
