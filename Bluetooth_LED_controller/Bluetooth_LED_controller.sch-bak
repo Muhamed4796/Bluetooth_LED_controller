@@ -50,7 +50,6 @@ F1 "PSU.sch" 50
 F2 "V12P0" I R 4700 3150 50 
 F3 "V5P0" I R 4700 2750 50 
 F4 "V3P3_analog" I R 4700 3350 50 
-F5 "V3P3_digital" I R 4700 3500 50 
 $EndSheet
 Wire Wire Line
 	4700 3350 5100 3350

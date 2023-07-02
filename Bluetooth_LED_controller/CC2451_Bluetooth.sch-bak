@@ -829,4 +829,43 @@ Wire Wire Line
 	8450 6300 8450 6150
 Text Notes 6750 6500 0    50   ~ 0
 This would be the connection to the USB for the communication with the MIDI controller.\nHowever, the correct configuration needs to be tested with the software developer.
+Wire Wire Line
+	9200 3050 9450 3050
+$Comp
+L Device:R R?
+U 1 1 64A26CA5
+P 9050 3050
+F 0 "R?" V 9257 3050 50  0000 C CNN
+F 1 "100" V 9166 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8980 3050 50  0001 C CNN
+F 3 "~" H 9050 3050 50  0001 C CNN
+	1    9050 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8900 3050 8300 3050
+$Comp
+L Device:LED D?
+U 1 1 64A2D5E3
+P 9600 3050
+F 0 "D?" H 9593 2795 50  0000 C CNN
+F 1 "LED" H 9593 2886 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 9600 3050 50  0001 C CNN
+F 3 "~" H 9600 3050 50  0001 C CNN
+	1    9600 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64A31B1B
+P 10000 3050
+F 0 "#PWR?" H 10000 2800 50  0001 C CNN
+F 1 "GND" V 10005 2922 50  0000 R CNN
+F 2 "" H 10000 3050 50  0001 C CNN
+F 3 "" H 10000 3050 50  0001 C CNN
+	1    10000 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10000 3050 9750 3050
 $EndSCHEMATC
